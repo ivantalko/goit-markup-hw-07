@@ -1,0 +1,111 @@
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border-color);
+}
+.head {
+  display: flex;
+  align-items: center;
+}
+/* logo */
+.header-logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  margin-left: 0;
+  margin-right: 93px;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+.header-logo__color {
+  color: #2196f3;
+}
+/* site nav */
+.navigation {
+  display: flex;
+  padding-left: 0;
+}
+.navigation__item {
+  margin-right: 50px;
+}
+.navigation__item:last-child {
+  margin-right: 300px;
+}
+.navigation__link {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--link-color);
+  transition: 250ms var(--timing-function);
+}
+.navigation__link:hover {
+  color: var(--acsent-color);
+}
+
+.navigation__link:focus {
+  color: var(--acsent-color);
+}
+.navigation__link--active {
+  position: relative;
+  color: #2196f3;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  border: #000000;
+}
+.navigation__link--active:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196f3;
+  transform: translateY(31.5px);
+}
+
+/* header-contact */
+.contact {
+  display: flex;
+  vertical-align: middle;
+  padding: 0;
+}
+.contact__link {
+  display: flex;
+  align-items: center;
+}
+.contact__icon {
+  margin-right: 10px;
+  fill: #757575;
+  transition: 250ms var(--timing-function);
+}
+.contact__link:hover .contact__icon {
+  fill: #2196f3;
+}
+.contact__link:focus .contact__icon {
+  fill: #2196f3;
+}
+.contact__item {
+  margin-right: 30px;
+}
+.contact__item:last-child {
+  margin-right: 0;
+}
+.contact__link {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #757575;
+  transition: 250ms var(--timing-function);
+}
+.contact__link:hover,
+.contact__link:focus {
+  color: var(--acsent-color);
+}
