@@ -84,7 +84,6 @@ p {
   color: var(--title-text-color);
   text-decoration: none;
 }
-
 .header-logo__color {
   color: #2196f3;
 }
@@ -136,7 +135,6 @@ p {
   transform: translateY(31.5px);
 }
 
-/* header-contact */
 .contact {
   display: flex;
   vertical-align: middle;

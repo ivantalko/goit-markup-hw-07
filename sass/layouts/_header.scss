@@ -18,9 +18,10 @@
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   text-decoration: none;
-}
-.header-logo__color {
+ &__color {
   color: #2196f3;
+}
+
 }
 /* site nav */
 .navigation {
@@ -68,8 +69,3 @@
   }
 }
 }
-
-
-
-
-/* header-contact */
