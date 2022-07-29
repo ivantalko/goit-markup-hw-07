@@ -44,13 +44,14 @@
                 background: #ffffff;
                 border: 1px solid rgba(0, 0, 0, 0.1);
                 transition: 250ms var(--timing-function);
+                &:hover {
+                    fill: #2196f3;
+                    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+                      0px 2px 1px rgba(0, 0, 0, 0.2);
+                  }
 }
 
-.modal-b:hover {
-                fill: #2196f3;
-                box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-                                0px 2px 1px rgba(0, 0, 0, 0.2);
-}
+
 
 .form-icon-person {
                 position: absolute;
@@ -61,6 +62,9 @@
                 margin: 0;
                 padding: 0;
                 fill: #212121;
+                .form-input:focus~& {
+                    fill: #2196f3;
+                  }
 }
 
 .form-icon-phone {
@@ -72,6 +76,9 @@
                 margin: 0;
                 padding: 0;
                 fill: #212121;
+                .form-input:focus~& {
+                    fill: #2196f3;
+                  }
 }
 
 .form-icon-post {
@@ -82,6 +89,9 @@
                 top: 50%;
                 margin: 0;
                 padding: 0;
+                .form-input:focus~& {
+                    fill: #2196f3;
+                  }
 }
 
 .form-title {
@@ -120,47 +130,40 @@
                 padding: 10px 42px;
                 outline: #2196f3;
                 transition: 250ms var(--timing-function);
+                &:focus {
+                    border-color: #2196f3;
+                }
 }
 
-/* .form-input:hover {
-  cursor: pointer;
-} */
-.form-input:focus {
-                border-color: #2196f3;
-}
 
-.form-input:focus~.form-icon-person {
-                fill: #2196f3;
-}
 
-.form-input:focus~.form-icon-phone {
-                fill: #2196f3;
-}
 
-.form-input:focus~.form-icon-post {
-                fill: #2196f3;
-}
+
+
+
+
 
 .checkbox {
                 appearance: none;
+                &-icon {
+                    display: inline-block;
+                    width: 16px;
+                    height: 15px;
+                    border: 1px solid #212121;
+                    border-radius: 2px;
+                    .checkbox:checked+& {
+                        border-color: transparent;
+                        background-color: #2196f3;
+                        background-image: url(../imges/icon-chekbox.svg);
+                        background-size: cover;
+                        background-origin: border-box;
+                        background-repeat: no-repeat;
+                      }
+                  }
 }
 
-.checkbox-icon {
-                display: inline-block;
-                width: 16px;
-                height: 15px;
-                border: 1px solid #212121;
-                border-radius: 2px;
-}
 
-.checkbox:checked+.checkbox-icon {
-                border-color: transparent;
-                background-color: #2196f3;
-                background-image: url(../imges/icon-chekbox.svg);
-                background-size: cover;
-                background-origin: border-box;
-                background-repeat: no-repeat;
-}
+
 
 .form-label {
                 font-family: 'Roboto';
@@ -183,13 +186,10 @@
                 resize: none;
                 outline: #2196f3;
                 transition: 250ms var(--timing-function);
-}
+                &:focus {
+                border-color: #2196f3;}
 
-.form-textarea:focus {
-                border-color: #2196f3;
-}
-
-.form-textarea::placeholder {
+                &::placeholder {
                 font-family: 'Roboto';
                 font-style: normal;
                 font-weight: 400;
@@ -198,6 +198,11 @@
                 letter-spacing: 0.01em;
                 color: rgba(117, 117, 117, 0.5);
 }
+}
+
+
+
+
 
 .form-terms {
                 display: flex;
@@ -205,9 +210,7 @@
                 align-items: center;
                 gap: 7px;
                 margin-bottom: 30px;
-}
-
-.form-terms-text {
+                &-text {
                 display: inline-flex;
                 align-items: center;
                 gap: 8px;
@@ -219,6 +222,9 @@
                 letter-spacing: 0.03em;
                 color: #757575;
 }
+}
+
+
 
 .form-link {
                 font-family: 'Roboto';
@@ -246,8 +252,8 @@
                 border-radius: 4px;
                 color: var(--ptimari-bg-color);
                 transition: 250ms var(--timing-function);
-}
-
-.form-button:hover {
+                &:hover {
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+}
+

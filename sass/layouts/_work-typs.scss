@@ -1,21 +1,16 @@
 .work {
                 margin-bottom: 94px;
-}
-
-.work__typs {
+                &__typs {
                 padding: 0;
                 display: flex;
 }
-
-.work__list {
+&__list {
                 padding-right: 30px;
-}
-
-.work__list:last-child {
+                .work__ &:last-child {
                 padding-right: 0;
 }
-
-.work__title {
+}
+&__title {
                 margin-bottom: 50px;
                 font-weight: 700;
                 font-size: 36px;
@@ -24,12 +19,10 @@
                 letter-spacing: 0.03em;
                 color: var(--link-color);
 }
-
-.work__list {
+&__list {
                 position: relative;
 }
-
-.work__img--text {
+&__img--text {
                 position: absolute;
                 bottom: 0;
                 right: 0;
@@ -49,3 +42,14 @@
                 color: #ffffff;
                 background: rgba(47, 48, 58, 0.8);
 }
+}
+
+
+
+
+
+
+
+
+
+

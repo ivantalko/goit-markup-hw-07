@@ -8,17 +8,14 @@
                 margin-bottom: 50px;
                 display: flex;
                 justify-content: center;
-}
-
-.but .item {
+                & .item {
                 margin-right: 8px;
 }
 
-.but .item:last-child {
+& .item:last-child {
                 margin-right: 0;
 }
-
-.but .list {
+& .list {
                 padding: 6px 22px 6px 22px;
                 font-family: inherit;
                 font-weight: 500;
@@ -29,22 +26,26 @@
                 border-radius: 4px;
                 transition: 250ms var(--timing-function);
 }
-
-.but .list:hover {
+& .list:hover {
                 background-color: #2196f3;
+                color: #ffffff;
                 cursor: pointer;
                 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
                                 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.but .list:hover {
-                color: #ffffff;
-}
-
-.but .list:focus {
+& .list:focus {
                 background-color: #2196f3;
-}
-
-.but .list:focus {
                 color: #ffffff;
 }
+}
+
+
+
+
+
+
+
+
+
+

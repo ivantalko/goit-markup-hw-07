@@ -11,9 +11,7 @@
                 background-color: #2f303a;
                 background-repeat: no-repeat;
                 background-position: center;
-}
-
-.hero__title {
+                &__title {
                 padding-bottom: 30px;
                 font-weight: 900;
                 font-size: 44px;
@@ -23,8 +21,7 @@
                 text-transform: uppercase;
                 color: var(--ptimari-bg-color);
 }
-
-.hero__button {
+&__button {
                 padding: 10px 32px 10px 32px;
                 font-family: inherit;
                 font-weight: 700;
@@ -38,3 +35,7 @@
                 border-radius: 4px;
                 color: var(--ptimari-bg-color);
 }
+}
+
+
+
